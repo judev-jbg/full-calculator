@@ -1,0 +1,18 @@
+<div class="converter">
+  <h2>Conversor</h2>
+  <input
+    type="number"
+    [(ngModel)]="inputValue"
+    placeholder="Ingrese el valor"
+    min="0"
+  />
+  <select [(ngModel)]="fromUnit">
+    <!-- Agregar opciones para las unidades -->
+    <option *ngFor="let unit of units" [value]="unit">{{ unit }}</option>
+  </select>
+  <select [(ngModel)]="toUnit">
+    <option *ngFor="let unit of units" [value]="unit">{{ unit }}</option>
+  </select>
+  <button (click)="convert()">Convertir</button>
+  <div class="result">{{ convertedValue }}</div>
+</div>
