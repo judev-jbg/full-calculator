@@ -1,27 +1,57 @@
-# FullCalculator
+# Full Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+Full Calculator es una aplicación de calculadora web desarrollada en Angular. Este proyecto personal se creó con el propósito de practicar y mejorar las habilidades en Angular, y proporciona funcionalidades tanto de cálculo básico como avanzado, junto con un conversor de unidades de longitud.
 
-## Development server
+## Características
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Calculadora Básica**: Suma, resta, multiplicación y división.
+- **Operaciones Avanzadas**: Porcentaje, raíz cuadrada, potencias, seno, coseno, tangente, y constantes matemáticas como π y e.
+- **Conversor de Unidades de Longitud**: Conversión entre diferentes unidades de medida como kilómetros, metros, millas, etc.
+- **Interfaz de Usuario Intuitiva**: Cambio entre la calculadora y el conversor en la misma pantalla sin recargar la página.
 
-## Code scaffolding
+## Instalación
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
 
-## Build
+1. Clona el repositorio:
+   `git clone https://github.com/judev-jbg/full-calculator.git`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Navega al directorio del proyecto:
+   `cd full-calculator`
 
-## Running unit tests
+3. Instala las dependencias:
+   `npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Ejecuta la aplicación:
+   `ng serve`
 
-## Running end-to-end tests
+5. Abre tu navegador y visita http://localhost:4200.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Uso
 
-## Further help
+1. **Calculadora**: Selecciona las operaciones y funciones matemáticas para realizar cálculos. Los resultados se mostrarán en tiempo real mientras introduces los datos.
+2. **Conversor de Unidades**: Ingresa un valor y selecciona las unidades de origen y destino para convertir. Los resultados se actualizan automáticamente.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contribución
+
+Este es un proyecto personal y abierto para que cualquier persona que desee aprender o mejorar sus habilidades en Angular pueda contribuir.
+
+Para contribuir:
+
+1. Haz un fork del repositorio.
+2. Crea una rama para tu funcionalidad o corrección: `git checkout -b nombre-rama`.
+3. Realiza tus cambios y haz commit: `git commit -m 'Descripción de los cambios'`.
+4. Haz push a tu rama: `git push origin nombre-rama`.
+5. Abre un Pull Request.
+
+Se agradecen las sugerencias y mejoras en el código.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+---
+
+Repositorio del proyecto: [GitHub](https://github.com/judev-jbg/full-calculator)
+
+> Autor: Judev
