@@ -1,28 +1,77 @@
 <div class="calculator">
-  <div class="display">
-    <input type="text" [(ngModel)]="currentInput" disabled />
-    <div class="result">{{ result }}</div>
+  <div class="display-container">
+    <!-- Display de la expresión de operación -->
+    <div class="expression-display">
+      {{ expression }}
+    </div>
+    <!-- Display del resultado -->
+    <div class="result-display">
+      {{ result }}
+    </div>
   </div>
   <div class="buttons">
-    <button (click)="clear()">AC</button>
-    <button (click)="append('(')">(</button>
-    <button (click)="append(')')">)</button>
-    <button (click)="append('%')">%</button>
-    <button (click)="append('/')">/</button>
-    <button (click)="append('7')">7</button>
-    <button (click)="append('8')">8</button>
-    <button (click)="append('9')">9</button>
-    <button (click)="append('*')">*</button>
-    <button (click)="append('4')">4</button>
-    <button (click)="append('5')">5</button>
-    <button (click)="append('6')">6</button>
-    <button (click)="append('-')">-</button>
-    <button (click)="append('1')">1</button>
-    <button (click)="append('2')">2</button>
-    <button (click)="append('3')">3</button>
-    <button (click)="append('+')">+</button>
-    <button (click)="append('0')">0</button>
-    <button (click)="append('.')">.</button>
-    <button (click)="calculate()">=</button>
+    <!-- botones operaciones avanzadas -->
+    <button class="advancedOperator" (click)="performAdvancedOperation('√')">
+      √
+    </button>
+    <button class="advancedOperator" (click)="performAdvancedOperation('pi')">
+      π
+    </button>
+    <button class="advancedOperator" (click)="performAdvancedOperation('^')">
+      ^
+    </button>
+    <button
+      class="showAllAdvancedOperation"
+      (click)="showAllAdvancedOperation()"
+    >
+      ^
+    </button>
+    <div class="advancedOperator__container">
+      <button
+        class="advancedOperator"
+        (click)="performAdvancedOperation('sin')"
+      >
+        sin
+      </button>
+      <button
+        class="advancedOperator"
+        (click)="performAdvancedOperation('cos')"
+      >
+        cos
+      </button>
+      <button
+        class="advancedOperator"
+        (click)="performAdvancedOperation('tan')"
+      >
+        tan
+      </button>
+    </div>
+
+    <!-- Número botones -->
+    <button (click)="clear()">C</button>
+    <button (click)="performOperation('()')">()</button>
+    <button (click)="performAdvancedOperation('%')">%</button>
+    <button (click)="performAdvancedOperation('/')">÷</button>
+
+    <button (click)="inputDigit(7)">7</button>
+    <button (click)="inputDigit(8)">8</button>
+    <button (click)="inputDigit(9)">9</button>
+    <button (click)="performOperation('*')">x</button>
+
+    <button (click)="inputDigit(4)">4</button>
+    <button (click)="inputDigit(5)">5</button>
+    <button (click)="inputDigit(6)">6</button>
+    <button (click)="performOperation('-')">-</button>
+
+    <button (click)="inputDigit(1)">1</button>
+    <button (click)="inputDigit(2)">2</button>
+    <button (click)="inputDigit(3)">3</button>
+    <button (click)="performOperation('+')">+</button>
+
+    <button (click)="inputDigit(0)">0</button>
+    <button (click)="inputDecimal('.')">.</button>
+    <button (click)="backspace()">←</button>
+
+    <button class="equal" (click)="calculateResult()">=</button>
   </div>
 </div>
